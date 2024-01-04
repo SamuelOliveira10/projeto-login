@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 98vw;
+    height: 100vh;
+    background-color: var(--lilas);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+main {
+    background-color: white;
+    border-radius: 15px;
+    width: 250px;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+img#foto {
+    border-radius: 15px 15px 0px 0px;
+    height: 250px;
+    width: 250px;
+}
+
+/* div#imagem {
+    height: 250px;
+    background: url(../imagens/pexels-dinnow-9444476\ \(1\).jpg) center no-repeat fixed;
+    background-size: cover;
+    border-radius: 15px 15px 0px 0px;
+} */
+
+section > h1 {
+    text-align: center;
+    padding: 12px;
+}
+
+section > p {
+    font-size: 0.85em;
+    padding: 5px;
+    line-height: 1.2em;
+}
+
+div.login {
+    background-color: var(--lilas);
+    margin: 7px;
+    border-radius: 7px;
+    height: 40px;
+    width: 236px;
+}
+
+input#insert {
+    font-size: 1em;
+    background-color: #8dd1d0;
+    border: 0px;
+    height: 35px;
+    position: absolute;
+    transform: translate(0px, 2.5px);
+    border-radius: 7px;
+    width: 191px;
+}
+
+#icons {
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+}
+
+#enter {
+    width: 236px;
+    height: 40px;
+    background-color: var(--verde);
+    margin: 7px;
+    border-radius: 7px;
+    border: 0px;
+    color: white;
+    font-size: 1em;
+}
+
+#enter:hover {
+    background-color: #205c5a;
+}
+
+#esc {
+    width: 236px;
+    height: 40px;
+    margin: 7px;
+    border-radius: 7px;
+    border: 1px solid var(--verde);
+    color: #205c5a;
+    font-size: 1em;
+    background-color: white;
+}   
+
+#esc:hover {
+    background-color: #5ed1cd;
+}

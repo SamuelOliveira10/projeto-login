@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+body {
+    background-image: linear-gradient(to top, var(--verde), var(--lilas));
+}
+
+main {
+    height: 250px;
+    width: 700px;
+}
+
+img#foto {
+    border-radius: 15px 0px 0px 15px;
+}
+
+section {
+    width: 430px;
+    height: 250px;
+}
+
+.caixa {
+    display: inline-block;
+    position: relative;
+}

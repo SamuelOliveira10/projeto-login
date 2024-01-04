@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Login</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 769px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="estilos/desktop.css" media="screen and (min-width: 1024px)">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="caixa"> 
+            <img id="foto" src="imagens/pexels-dinnow-9444476 (1).jpg" alt="">
+        </div>
+        <section class="caixa">
+            <h1>Login</h1>
+            <p>Seja bem-vindo novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
+            <form action="" method="post" autocomplete="on">
+
+                <div class="login">
+                    <label for="iemail">
+                        <span id="icons" class="material-icons">person</span>
+                    </label>
+
+                    <input onclick="clickLogin()" id="insert" type="email" name="email" id="iemail" placeholder=" seu e-mail" maxlength="30" autocomplete="email">
+                </div>
+
+                <div class="login">
+                    <label for="ipass">
+                        <span id="icons" class="material-icons">vpn_key</span>
+                    </label>
+
+                    <input onclick="clickLogin()" id="insert" type="password" name="pass" id="ipass" placeholder=" sua senha" minlength="8" maxlength="20" autocomplete="current-password">
+                </div>
+
+                <div>
+                    <input class="tablet" id="enter" type="submit" value="Entrar">
+                </div>
+
+                <div>
+                    <input class="tablet" id="esc" type="submit" value="Esqueci a senha">
+                </div>
+            </form>
+        </section>
+    </main>
+    <script>
+        function clickLogin() {
+
+        
+        }
+    </script>
+</body>
+</html>
