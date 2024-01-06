@@ -11,21 +11,21 @@
 </head>
 <body>
     <main>
-        <div class="caixa"> 
-            <img id="foto" src="imagens/pexels-dinnow-9444476 (1).jpg" alt="">
+        <div id="imagem"> 
+
         </div>
-        <section class="caixa">
+        <section>
             <h1>Login</h1>
             <p>Seja bem-vindo novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
 
-            <form action="" method="post" autocomplete="on">
+            <form action="login.php" method="post" autocomplete="on">
 
                 <div class="login">
                     <label for="iemail">
                         <span id="icons" class="material-icons">person</span>
                     </label>
 
-                    <input onclick="clickLogin()" id="insert" type="email" name="email" id="iemail" placeholder=" seu e-mail" maxlength="30" autocomplete="email">
+                    <input id="insert" type="email" name="email" id="iemail" placeholder=" seu e-mail" maxlength="30" autocomplete="email">
                 </div>
 
                 <div class="login">
@@ -46,11 +46,5 @@
             </form>
         </section>
     </main>
-    <script>
-        function clickLogin() {
-
-        
-        }
-    </script>
 </body>
 </html>
