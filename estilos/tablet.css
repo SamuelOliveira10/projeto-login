@@ -6,16 +6,18 @@ body {
 }
 
 main {
-    height: 250px;
-    width: 700px;
+    height: 300px;
+    width: 90vw;
 }
 
-img#foto {
-    border-radius: 15px 0px 0px 15px;
+div#imagem {
+    height: 100%;
+    width: 35%;
+    float: left;
 }
 
 section {
-    width: 430px;
-    height: 250px;
+    width: 62%;
+    float: right;
 }
 

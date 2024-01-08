@@ -34,7 +34,7 @@ main {
 
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.6);
 
-    transition: width .5s, height .5s;
+    transition: height .5s, width .5s;
     transition-timing-function: ease;
 }
 
@@ -44,71 +44,87 @@ div#imagem {
     background-size: cover;
 } 
 
+section {
+    padding: 0px 7px 20px 7px;
+}
+
 section > h1 {
     text-align: center;
-    padding: 12px;
+    padding: 10px;
 }
 
 section > p {
     font-size: 0.85em;
-    padding: 5px;
     line-height: 1.2em;
 }
 
 div.login {
     background-color: var(--lilas);
-    margin: 7px;
+    margin: 5px 0px;
     border-radius: 7px;
     height: 40px;
-    width: 236px;
-}
-
-input#insert {
-    font-size: 1em;
-    background-color: #8dd1d0;
-    border: 0px;
-    height: 35px;
-    position: absolute;
-    transform: translate(0px, 2.5px);
-    border-radius: 7px;
-    width: 191px;
+    width: 100%;
+    border: 3px solid var(--lilas);
 }
 
 #icons {
     color: white;
-    width: 30px;
-    height: 30px;
-    padding: 6px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 2px;
 }
 
-#enter {
-    width: 236px;
+div.login > input {
+    font-size: 0.9em;
+    background-color: #8dd1d0;
+    border: 0px;
+    height: 100%;
+    border-radius: 7px;
+    width: calc(100% - 45px);
+    transform: translateY(-9.5px);
+}
+
+div.login > input:focus-within {
+    background-color: white;
+}
+
+label {
+    display: none;
+}
+
+div.campo > input[type=submit] {
+    width: 100%;
     height: 40px;
     background-color: var(--verde);
-    margin: 7px;
     border-radius: 7px;
     border: 0px;
     color: white;
-    font-size: 1em;
-}
-
-#enter:hover {
-    background-color: #205c5a;
+    font-size: 0.9em;
     cursor: pointer;
 }
 
-#esc {
-    width: 236px;
+div.campo > input[type=submit]:hover {
+    background-color: #205c5a;
+}
+
+div.campo > a#botao {
+    display: block;
+    width: 100%;
     height: 40px;
-    margin: 7px;
+    margin-top: 5px;
     border-radius: 7px;
     border: 1px solid var(--verde);
     color: #205c5a;
-    font-size: 1em;
+    font-size: 0.9em;
     background-color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 3px;
 }   
 
-#esc:hover {
+div.campo > a#botao:hover {
     background-color: #5ed1cd;
     cursor: pointer;
 }
